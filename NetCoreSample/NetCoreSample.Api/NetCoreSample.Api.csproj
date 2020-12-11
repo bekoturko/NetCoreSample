@@ -14,5 +14,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\NetCoreSample.Ioc\NetCoreSample.Ioc.csproj" />
+        <ProjectReference Include="..\NetCoreSample.ServiceModel\NetCoreSample.ServiceModel.csproj" />
     </ItemGroup>
 </Project>
