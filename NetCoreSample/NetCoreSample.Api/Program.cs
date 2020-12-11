@@ -14,7 +14,9 @@ namespace NetCoreSample.Api
     {
         public static void Main(string[] args)
         {
-            var logger = NLogBuilder.ConfigureNLog($"Config/nlog.config").GetCurrentClassLogger();
+            var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
+            var logger = NLogBuilder.ConfigureNLog($"Config/nlog.{env}.config").GetCurrentClassLogger();
 
             try
             {
